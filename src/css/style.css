@@ -1,0 +1,824 @@
+@font-face {
+    src: url(../fonts/Cairo-Regular.ttf);
+    font-family: ar-font;
+}
+
+body {
+    font-family: ar-font;
+    direction: rtl;
+}
+
+header {
+    background-image: url(./../images/bgr2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* كي لا تغطي الخلفية كامل الطبقة الزرقاء */
+    min-height: 100vh;
+}
+header .black{
+    background-color: rgb(0, 0, 0,.4);
+    background-size: cover;
+    background-position: center;
+    /* كي لا تغطي الخلفية كامل الطبقة الزرقاء */
+    min-height: 100vh;
+}
+
+header .MainCard {
+    background-color: rgba(5, 117, 230, 0.8);
+    /* background-color: rgba(33, 45, 61); */
+    color: #ffffff;
+    transform: translateY(30%);
+    padding: 3% 10%; 
+}
+
+header .MainCard img {
+    width: 120px;
+    border: 5px solid #72ace7;
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 {
+    font-size: 36px;
+    color: #f9f9f9;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 span {
+    font-size: 24px;
+}
+
+header .MainCard ul {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+header .MainCard ul li {
+    margin-right: 10px;
+}
+
+header .MainCard ul li a {
+    color: #021b79;
+    font-size: 24px;
+}
+
+header .MainCard h2 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header .MainCard p {
+    font-size: 16px;
+    line-height: 35px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+header .MainCard>a {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+nav.navbar{
+    text-align: right;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin: 0 2px;
+    transition: all 0.5s ease;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
+    color: #0575e6;
+    background-color: #ffffff;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+    color: #0575e6;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+    color: #ffffff;
+    background-color: #0575e6;
+}
+
+nav.navbar.noTransparrent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler {
+    margin: 30px auto;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler span {
+    color: #0575e6;
+}
+
+@media (max-width: 767px) {
+    nav.navbar {
+        min-height: 80px;
+    }
+
+    nav.navbar .container {
+        width: 100%;
+        position: relative;
+        min-height: 40px;
+    }
+    nav.navbar button.navbar-toggler{
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    nav.navbar button.navbar-toggler span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+    }
+    nav.navbar.noTransparrent button.navbar-toggler {
+        outline: none;
+    }
+    nav.navbar.noTransparrent button.navbar-toggler {
+        margin: 0;
+    }
+    nav.navbar ul{
+        padding-right: 0;
+    }
+}
+
+section.licence {
+    padding: 100px 0 80px;
+    background-color: #f6fbff;
+    text-align: right;
+}
+
+section.licence .title {
+    padding-bottom: 43px;
+    position: relative;
+}
+
+section.licence .title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #196dd1;
+}
+
+section.licence .title:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #196dd1;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+section.licence .title h2 i {
+    display: block;
+}
+
+section.licence ul.timeline li .time-box {
+    background-color: #ffffff;
+    border: 2px solid #f4f3f3;
+    padding: 20px 25px;
+    max-width: 48%;
+    position: relative;
+}
+
+section.licence ul.timeline li .time-box h4 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+}
+
+section.licence ul.timeline li .time-box h4 span {
+    color: #ffffff;
+    background: #0575e6;
+    padding: 0 5px;
+    margin-left: 25px;
+}
+
+section.licence ul.timeline li .time-box p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+    width: 80%;
+}
+/* الصندوق الوهمي المثلث */
+section.licence ul.timeline li .time-box:after {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    /* المحتويات فارغة */
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -10px;
+    border-left: 2px solid #f4f3f3;
+    border-bottom: 2px solid #f4f3f3;
+    /* استدارة ليصبح بشكل  مثلث */
+    transform: rotate(45deg);
+}
+
+section.licence ul.timeline {
+    padding-right: 0;
+    padding-top: 45px;
+    position: relative;
+}
+/* الخط الازرق */
+section.licence ul.timeline:before {
+    content: "";
+    width: 2px;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: -1px;
+    background: #196dd1;
+}
+
+section.licence ul.timeline li {
+    /* للتحكم بالنقاط الزقاء */
+    position: relative;
+}
+/* النقاط الزرقاء  */
+section.licence ul.timeline li:before {
+    /* محتويات فارغة */
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #196dd1;
+    position: absolute;
+    top: 9%;
+    right: 50%;
+    margin-right: -5px;
+}
+/* العناصر الزوجية  */
+section.licence ul.timeline li:nth-of-type(even) {
+    direction: ltr;
+    text-align: left;
+}
+/* ازاحة التاريخ لليسار  */
+section.licence ul.timeline li:nth-of-type(even) .time-box h4 span {
+    margin-left: 0;
+    margin-right: 25px;
+    float: left;
+}
+
+section.licence ul.timeline li:nth-of-type(even) .time-box:after {
+    left: auto;
+    right: -10px;
+    border: 0;
+    border-top: 2px solid #f4f3f3;
+    border-right: 2px solid #f4f3f3;
+}
+
+section.licence ul.timeline li:not(:first-of-type) {
+    margin-top: -50px;
+}
+
+section.statistics {
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.statistics h2{
+    padding-bottom: 70px;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFF;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+section.statistics .overlay {
+    background-color: rgba(5, 117, 230, 0.7);
+    padding: 65px 0;
+}
+
+section.statistics .overlay .stat .card-title {
+    color: #ffffff;
+}
+section.statistics .overlay .stat p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 30px;
+}
+section.statistics .overlay .stat .card {
+    background-color: rgba(33, 45, 61);
+    padding:15px 0;
+    margin: 10px 0;
+    width: 14.8rem !important;
+    min-height: 360px;
+}
+section.statistics .overlay .stat .card.css i{
+    /* color: rgb(38, 77, 228); */
+}
+section.statistics .overlay .stat .card.js i{
+    color: rgb(247, 224, 24);
+}
+section.statistics .overlay .stat .card.bot i{
+    color: rgb(138, 18, 251);
+}
+section.statistics .overlay .stat .card.wb i{
+    color: rgb(72, 166, 239);
+}
+section.statistics .overlay .stat i {
+    color: #fff;
+}
+section.statistics .overlay .stat img {
+    width: 30%;
+    /* height: 110px; */
+}
+/* وسم الدائرة من مكتبة العداد */
+section.statistics .overlay .stat .circle canvas {
+    background-color: #eef6ff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+section.statistics .overlay .stat .circle {
+    position: relative;
+}
+/* القيم الرقمية */
+section.statistics .overlay .stat .circle span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0575e6;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+section.gallery {
+    padding: 75px 0 90px;
+}
+section.gallery .items img{
+    width: 100%;
+    height: 100%;
+}
+section.gallery .items .card .card-body p {
+    font-size: 14px;
+    color: #555555d1;
+}
+section.gallery .items .card > a {
+    height: 250px;
+}
+section.gallery .items .card .card-body a{
+    color: #0575E6;
+    background-color: transparent;
+    bottom: 2%;
+    left: 35%;
+    position: absolute;
+}
+section.gallery .items .card .card-body a:hover{
+    color: #FFF;
+    background-color: #0575E6;
+}
+section.gallery .items .card{
+    border: 1px solid #0575e6a9;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    height: 450px;
+}
+
+section.gallery .title {
+    margin-bottom: 35px;
+}
+
+section.gallery .title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #0575e6;
+}
+
+section.gallery .title h2 i {
+    display: block;
+}
+
+section.gallery .work-gallery input {
+    display: none;
+}
+
+section.gallery .work-gallery label {
+    font-size: 15px;
+    /* line-height: 35px; */
+    color: #8f9899;
+    cursor: pointer;
+    margin: 0 7px 40px;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: 2px solid #e4eeee;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+}
+
+section.gallery .work-gallery label:hover {
+    color: #ffffff;
+    background-color: #0575e6;
+    border: 2px solid #0575e6;
+}
+/* عند الضغط على  */
+section.gallery .work-gallery input.item-type-1:checked~label.label-type-1,
+section.gallery .work-gallery input.item-type-2:checked~label.label-type-2,
+section.gallery .work-gallery input.item-type-3:checked~label.label-type-3,
+section.gallery .work-gallery input.item-type-all:checked~label.label-type-all {
+    color: #ffffff;
+    background-color: #0575e6;
+    border: 2px solid #0575e6;
+}
+/* عند الضغط على فان العنصر item-type-1 يتغير */
+section.gallery .work-gallery input.item-type-1:checked~.items .item-type-1,
+section.gallery .work-gallery input.item-type-2:checked~.items .item-type-2,
+section.gallery .work-gallery input.item-type-3:checked~.items .item-type-3 {
+    transform: scale(1.08);
+    opacity: 1;
+}
+/* الاعمدة المغايرة  */
+section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-type-1),
+section.gallery .work-gallery input.item-type-2:checked~.items>.item:not(.item-type-2),
+section.gallery .work-gallery input.item-type-3:checked~.items>.item:not(.item-type-3) {
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+section.gallery .work-gallery .items .item {
+    transition: all 0.6s ease;
+    margin-bottom: 25px;
+}
+
+section.contacts {
+    background-image: url(../images/per.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* text-align: right; */
+}
+
+section.contacts .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 100px;
+    height: 100vh;
+}
+
+section.contacts .overlay .testimonials .title h3 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 27px;
+    line-height: 50px;
+}
+
+section.contacts .overlay .testimonials .slider {
+    /* width: 65%; */
+    margin: 0px auto 80px;
+}
+/* حاوي جميع الشرائح */
+section.contacts .overlay .testimonials .slider .carousel {
+    min-height: 250px;
+    color: #b1b1b1;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 80px 70px 35px;
+    right: 0;
+    left: 0;
+}
+/* عنصر الشريحة */
+section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+    min-height: 350px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption img {
+    position: absolute;
+    top: 0;
+    /* right: 50%; */
+    /* تحريكها بمقدار نصف حجم الجورة */
+    /* transform: translate(50%, -50%); */
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 span {
+    font-size: 15px;
+    color: #9c9c9c;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+    margin-bottom: 25px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li a {
+    font-size: 24px;
+    color: #b2d8fe;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul {
+    padding-right: 0;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li {
+    margin-right: 5px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li {
+    max-width: 15px;
+    height: 15px;
+    border: 1px solid #0575e6;
+    background-color: #ffffff;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li.active {
+    background-color: #0575e6;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
+    /* padding-right: 0; */
+    margin: 0;
+    bottom: 12px;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-next,
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: auto;
+    transform: translate(50%, -50%);
+    z-index: 10;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i,
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i {
+    padding: 10px 20px;
+    background: #0575e6;
+    border-radius: 50%;
+}
+
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
+    transform: translate(-50%, -50%);
+}
+
+section.contacts .overlay .contact-info {
+    background-color: rgba(33, 45, 61,.95);
+    padding: 50px;
+}
+
+section.contacts .overlay .contact-info .title h3 {
+    font-size: 30px;
+    color: #fff;
+    margin: 35px 0;
+    line-height: 50px;
+    padding-right: 10px;
+}
+
+section.contacts .overlay .contact-info .form form .form-group input,
+section.contacts .overlay .contact-info .form form .form-group textarea {
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+    font-family: ar-font;
+    font-size: 18px;
+    color: #c2c2c2;
+    line-height: 35px;
+    /* padding-right: 45px; */
+}
+
+section.contacts .overlay .contact-info .form form .form-group textarea {
+    min-height: 220px;
+    max-height: 220px;
+}
+
+section.contacts .overlay .contact-info .form form .form-group {
+    position: relative;
+}
+/* الايقونات داخل مربع الادخال */
+section.contacts .overlay .contact-info .form form .form-group:before {
+    font-family: FontAwesome;
+    position: absolute;
+    /* top: 8px; */
+    /* right: 30px; */
+    font-size: 18px;
+    line-height: 25px;
+    color: #0575e6;
+    /* للظهور ضمن الحقل */
+    display: inline-block;
+}
+/* ايقونة العنصر الاول */
+section.contacts .overlay .contact-info .form form .form-group:first-of-type:before {
+    content: "\f007";
+}
+
+section.contacts .overlay .contact-info .form form .form-group:nth-of-type(2):before {
+    content: "\f0e0";
+}
+
+section.contacts .overlay .contact-info .form form button {
+    font-family: ar-font;
+    font-size: 24px;
+    color: #0575e6;
+    line-height: 25px;
+    background-color: #ffffff;
+    padding: 10px 70px;
+    border: 2px solid #0575e6;
+    border-radius: 3px;
+    /* margin-right: 15px; */
+}
+
+section.contacts .overlay .contact-info ul.contact-us li a{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section.contacts .overlay .contact-info ul {
+    padding: 0;
+}
+
+section.contacts .overlay .contact-info ul.social li {
+    margin-right: 9px;
+}
+
+section.contacts .overlay .contact-info ul.social li a i {
+    background-color: #fff;
+    color: #00000066;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+section.contacts .overlay .contact-info ul.social li a i:hover {
+    background-color: #0006;
+    color: #fff;
+}
+
+section.contacts .overlay .copyright p {
+    font-size: 18px;
+    color: #ececec;
+    line-height: 77px;
+    margin: 0px;
+}
+
+section.contacts form .error {
+    color: red;
+}
+
+@media (max-width: 990px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+
+    header {
+        min-height: 60vh;
+    }
+    section.statistics .overlay .stat .card {
+        margin: 10px auto;
+        width: 18rem !important;
+        min-height: 360px;
+    }
+    section.licence ul.timeline li .time-box:after {
+        left: -5px;
+    }
+    section.licence ul.timeline li:nth-of-type(even) .time-box:after {
+        right: -5px;
+    }
+    /* section.gallery .items .card {
+        height: 450px;
+    } */
+    /* section.gallery .items .card > a {
+        height: 160px;
+    } */
+    section.gallery .items .card .card-body {
+        text-align: right !important;
+    }
+    header .black {
+        background-color: rgb(0, 0, 0,.4);
+        background-size: cover;
+        background-position: center;
+        min-height: 60vh;
+    }
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 390px;
+    }
+
+    section.contacts .overlay .contact-info ul.social li a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    section.contacts .overlay .contact-info .form form .form-group input,
+    section.contacts .overlay .contact-info .form form .form-group textarea {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1025px) {
+    header .black {
+        min-height: 40vh;
+    }
+    header {
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 767px) {
+    header .MainCard {
+        transform: translateY(15%);
+    }
+    header .MainCard p {
+        width: 100%;
+    }
+    section.gallery .items .card > a {
+        height: 250px;
+    }
+    section.licence ul.timeline li:nth-of-type(even) {
+        text-align: right;
+    }
+    section.statistics .overlay .stat .card {
+        margin: 10px auto;
+        width: auto !important;
+        min-height: auto;
+    }
+    section.gallery .items .card .card-body{
+        text-align: right !important;
+    }
+    section.contacts {
+        height: auto;
+    }
+    section.contacts .overlay {
+        height: auto;
+    }
+    section.gallery .work-gallery label {
+        margin: 0 3px 20px;
+    }
+    section.gallery .items .card .card-body a {
+        position: inherit;
+    }
+    section.licence ul.timeline li .time-box p {
+        line-height: 28px;
+        width: 100%;
+    }
+    section.licence ul.timeline li .time-box {
+        max-width: 100%;
+    }
+
+    section.licence ul.timeline li:not(:first-of-type) {
+        margin-top: 20px;
+    }
+/* اخفاء السهم */
+    section.licence ul.timeline li .time-box:after {
+        display: none;
+    }
+
+    section.licence ul.timeline:before {
+        height: 90%;
+    }
+
+    section.contacts .overlay .testimonials .slider {
+        width: 95%;
+    }
+
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+        padding: 60px 30px 20px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px){
+   section.contacts .overlay .contact-info ul.contact-us li {
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    	align-items: center;
+    }
+}
