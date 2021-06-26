@@ -468,14 +468,14 @@ section.contacts {
     background-image: url(../images/per.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     /* text-align: right; */
 }
 
 section.contacts .overlay {
     background-color: rgba(0, 0, 0, 0.3);
     padding-top: 100px;
-    height: 100vh;
+    height: auto;
 }
 
 section.contacts .overlay .testimonials .title h3 {
