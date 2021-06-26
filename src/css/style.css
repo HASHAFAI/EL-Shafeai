@@ -379,7 +379,7 @@ section.gallery .items .card .card-body p {
     color: #555555d1;
 }
 section.gallery .items .card > a {
-    height: 250px;
+    height: 220px;
 }
 section.gallery .items .card .card-body a{
     color: #0575E6;
@@ -396,7 +396,7 @@ section.gallery .items .card{
     border: 1px solid #0575e6a9;
     padding-right: 0 !important;
     padding-left: 0 !important;
-    height: 450px;
+    height: 420px;
 }
 
 section.gallery .title {
