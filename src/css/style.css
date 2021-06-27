@@ -822,3 +822,8 @@ section.contacts form .error {
     	align-items: center;
     }
 }
+@media (max-width: 540px){
+    section.gallery .items .card {
+    height: auto;
+}
+}
