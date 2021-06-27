@@ -826,4 +826,7 @@ section.contacts form .error {
     section.gallery .items .card {
     height: auto;
 }
+section.licence ul.timeline li .time-box h4 {
+    font-size: 17px;
+}
 }
